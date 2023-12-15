@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $very-dark-blue;
+}
+
+.main {
+  width: 100%;
+  max-width: 21.5rem;
+  padding: 0.5rem;
+  margin-inline: auto;
+  margin-top: $base-spacing * 7.25;
+
+  .main__section {
+    text-align: center;
+    background-color: $dark-desaturated-blue;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    .main__content {
+      padding-block: $base-spacing * 3.5 $base-spacing * 3;
+      padding-inline: $base-spacing * 2.475;
+    }
+  }
+}
+
+@include breakpoint($bp: 640px) {
+  .main {
+    max-width: 31.5rem;
+  }
+}
+
+@include md {
+  .main {
+    max-width: 37.5rem;
+  }
+}
+@include lg {
+  .main {
+    display: flex;
+    max-width: 58rem;
+    margin-top: $base-spacing * 14.125;
+
+    .main__section {
+      text-align: start;
+      border-radius: 0;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+
+      .main__content {
+        padding-block: $base-spacing * 6.25 $base-spacing * 1.75;
+        padding-inline: $base-spacing * 5.95 $base-spacing * 6.5;
+      }
+    }
+  }
+}
+@include xl {
+  .main {
+    max-width: 65.5rem;
+    .main__section {
+      .main__content {
+        padding-block: $base-spacing * 6.25 $base-spacing * 1.75;
+        padding-inline: $base-spacing * 5.95 $base-spacing * 6.5;
+      }
+    }
+  }
+}
+@include xxl {
+  .main {
+    display: flex;
+    max-width: 70.5rem;
+
+    .main__section {
+      .main__content {
+        padding-block: $base-spacing * 6.25 $base-spacing * 1.75;
+        padding-inline: $base-spacing * 5.95 $base-spacing * 6.5;
+      }
+    }
+  }
+}

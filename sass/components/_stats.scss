@@ -1,0 +1,38 @@
+.main__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: $base-spacing * 2.575;
+  margin-top: $base-spacing * 3.5;
+
+  .main__list-item {
+    .main__list-heading {
+      color: $white;
+    }
+
+    .main__list-p {
+      margin-top: $base-spacing * 0.5;
+      font-weight: 300;
+      font-size: $base-font-size * 0.75;
+      font-family: "Lexend Deca", sans-serif;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      color: $slightly-transparent-white-stat;
+    }
+  }
+}
+
+@include md {
+}
+@include lg {
+  .main__list-container {
+    flex-direction: row;
+    gap: $base-spacing * 5.25;
+  }
+}
+@include xl {
+}
+@include xxl {
+  .main__list-container {
+    margin-top: $base-spacing * 6;
+  }
+}

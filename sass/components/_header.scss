@@ -1,0 +1,81 @@
+.main__content {
+  .main__content-h1 {
+    font-size: 1.75rem;
+    line-height: 1.125;
+    color: $white;
+
+    .h1-accent {
+      color: $soft-violet;
+    }
+  }
+
+  .main__content-description {
+    margin-top: $base-spacing * 1.5;
+    font-size: $base-font-size;
+    line-height: 1.575;
+    color: $slightly-transparent-white;
+  }
+}
+
+@include breakpoint($bp: 640px) {
+  .main__content {
+    .main__content-h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@include md {
+  .main__content {
+    .main__content-description {
+      margin-top: $base-spacing * 1.75;
+      font-size: $base-font-size * 1.125;
+    }
+  }
+}
+@include lg {
+  .main__content {
+    .main__content-h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+    }
+
+    .main__content-description {
+      max-width: 40ch;
+      font-size: $base-font-size;
+    }
+  }
+}
+@include xl {
+  .main__content {
+    .main__content-h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+    }
+
+    .main__content-description {
+      max-width: 40ch;
+      margin-top: $base-spacing * 2;
+      font-size: $base-font-size;
+      line-height: 1.75;
+      color: $slightly-transparent-white;
+    }
+  }
+}
+@include xxl {
+  .main__content {
+    .main__content-h1 {
+      max-width: 17ch;
+      font-size: 2.25rem;
+      line-height: 1.25;
+    }
+
+    .main__content-description {
+      max-width: 40ch;
+      margin-top: $base-spacing * 2;
+      font-size: $base-font-size;
+      line-height: 1.75;
+      color: $slightly-transparent-white;
+    }
+  }
+}
